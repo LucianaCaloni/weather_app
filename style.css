@@ -1,0 +1,162 @@
+body {
+  font-family: "Arvo", serif;
+  background-color: #0c134f;
+}
+html {
+  font-size: 62.5%;
+}
+
+/*---------------------SECTION 1 */
+h1 {
+  color: #d4adfc;
+  font-size: 3rem;
+  margin: 2em;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#search-form input,
+button,
+span {
+  margin: 1em;
+  font-size: 2rem;
+}
+#search-form input {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fde2f3;
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+#search-form button {
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: #5c469c;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+#search-form button:hover {
+  background-color: #d4adfc;
+  color: #1d267d;
+}
+#search-form .msg {
+  color: #fde2f3;
+}
+
+/* -------------------SECTION 2 */
+
+.ajax-section {
+  margin: 50px 0 20px;
+}
+.ajax-section .cities {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ajax-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  background-color: #fde2f3;
+  color: black;
+  text-align: center;
+}
+.ajax-section .city::after {
+  content: "";
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 5%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background-color: #d4adfc;
+}
+
+.ajax-section figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ajax-section .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0C134F;
+}
+
+.ajax-section .city sup {
+  font-size: 0.5em;
+}
+
+.ajax-section .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: #d4adfc;
+  background: #5c469c;
+ 
+}
+
+.ajax-section .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+/* 
+apy key banner */
+.api {
+  background: #fffbbc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px
+}
+
+.api a {
+  text-decoration: underline;
+}
+
+.api a:hover {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer-style{
+  text-align: center;
+  color: #d4adfc;
+  font-size: 2rem;
+  margin-top: 2em;
+}
+
+
+/* ---------------RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .ajax-section .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #search-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .ajax-section .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

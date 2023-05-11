@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Caloni Luciana">
+  <meta name="description" content="weather app">
+  <title>Weather aplication</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Agrega aquí tus enlaces a CSS o cualquier otra biblioteca externa que desees utilizar -->
+</head>
+
+<body>
+  <!-- SECTION 1 -->
+  <section class="top-banner">
+    <div class="container">
+      <h1>天気予報アプリ</h1>
+
+      <form id="search-form">
+        <input type="text" id="location-input" placeholder="Enter the location" autofocus>
+        <button type="submit">Search for a city</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <!-- SECTION 2 -->
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+
+    </div>
+  </section>
+  <footer class="footer-style">
+    <div class="container">
+      <small>&copy; 2023 Caloni Luciana </small>
+    </div>
+
+  </footer>
+
+  <!-- Agrega aquí tus enlaces a JavaScript o cualquier otra biblioteca externa que desees utilizar -->
+  <script src="app.js"></script>
+</body>
+
+</html>
